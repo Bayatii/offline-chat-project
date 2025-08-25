@@ -10,7 +10,18 @@ A simple chat API built with Django and Django REST Framework. This project prov
 
 ## Endpoints
 - `POST /api/set-username/` — Set a username
+    ```json
+    {
+        "username": "your username"
+    }
+    ```
 - `POST /api/send-message/` — Send a message
+    ```json
+    {
+        "username": "your username",
+        "text": "your text"
+    }
+    ```
 - `GET /api/get-messages/` — Retrieve all messages (ordered by timestamp desc)
 
 ## Getting Started
